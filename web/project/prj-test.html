@@ -6,7 +6,7 @@
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-<title>희진의 포트폴리오 - 메인페이지</title>
+<title>희진의 포트폴리오 - 테스트프로젝트</title>
 <meta content="" name="descriptison">
 <meta content="" name="keywords">
 
@@ -34,43 +34,42 @@
 <link href="assets/css/style.css" rel="stylesheet">
 
 
-<!-- =======================================================
-  * Template Name: MyPortfolio - v2.1.0
-  * Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
+<script>
+	$(document).ready(function() {
 
+		// load projects
+		$("#prj-paradise").on("click", function() {
+			$("#main").load("project/prj-paradise.html");
+		});
+		$("#prj-luxuryOsaka").on("click", function() {
+			$("#main").load("project/prj-luxuryOsaka.html");
+		});
+		//load main    
+	});
+</script>
 <body>
-
 	<!-- Start header -->
 	<div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
 	</div>
 
-	<nav class="navbar navbar-light custom-navbar" id="burger-bar">
-	</nav>
+	<nav class="navbar navbar-light custom-navbar" id="burger-bar"></nav>
 	<!-- End header -->
-	
+
 	<!-- Start main -->
-	<main id="main">			
-	</main>
+	<main id="main"></main>
 	<!-- End #main -->
-	
+
 	<!-- Start footer -->
-	<footer class="footer" role="contentinfo" id="footer"></footer>
+	<footer class="footer" role="contentinfo" id="footer">
+	</footer>
 	<!-- End footer -->
-	
+
 	<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 	<!-- My script -->
-	<script src="assets/my/callHeaderAndFooter.js"></script>	
-	<script> 
-		$("#main").load("main.html")
-	</script>
-	
-	
+	<script src="assets/my/callHeaderAndFooter.js"></script>
+
 	<!-- Vendor JS Files -->
-	
+
 	<script src="assets/vendor/jquery/jquery.min.js"></script>
 	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -84,5 +83,4 @@
 
 
 </body>
-
 </html>
